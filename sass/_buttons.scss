@@ -1,0 +1,74 @@
+.btn {
+    padding:1rem;
+    color:$color-white;
+    &:link {
+        text-decoration: none;
+        font-size: 2rem;
+    }
+    &:focus,
+    &:active  {
+        span {
+            margin-right: .5rem;
+        }
+       box-shadow: 0 0 .5rem rgba(0,0,0, .3);
+    }
+    &__review {
+        padding: .8rem .5rem;
+        display: inline-block;
+        font-size: 1.4rem;
+        margin-left:-.5rem;
+        margin-bottom: .3rem;
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color:$color-blue-1;
+        }
+        &:hover {
+            background-color: rgba($color-grey, .4);
+        }
+        &:active {
+            transform: translateY(.1rem);
+        }
+        &--1 {
+            cursor: pointer;
+            padding:1rem 2rem;
+            width:50%;
+            display: inline-block;
+            border:none;
+            color:$color-grey-dark;
+            transition: all .3s;
+            box-shadow: 0 .2rem .5rem rgba(0,0,0, .3);
+            &:focus,
+            &:active {
+                outline: none; 
+            }
+            &:active {    
+                transform:translateY(.1rem);
+            }      
+            &:not(:last-child){
+                margin-right:2rem;
+            }
+        }
+    }
+    &__friend {
+        padding:.3rem .8rem;
+        border:none;
+        box-shadow: 0 .2rem .5rem rgba(0,0,0, .2);
+        color:$color-grey-dark;
+        cursor: pointer;
+        display: inline-block;
+        color:$color-grey-dark;
+        transition: all .3s;
+        &:not(:last-child){
+            margin-right: 1rem;
+        }
+        &:focus,
+        &:active {
+            outline:none;
+        }
+        &:active {     
+            transform:translateY(.2rem);
+        }      
+    }
+}
+

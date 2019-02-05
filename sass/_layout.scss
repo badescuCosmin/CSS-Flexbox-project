@@ -1,0 +1,87 @@
+.container {
+    max-width: 110rem;
+    background-color: $color-grey;
+    margin:5rem auto;
+    @media only screen and (max-width:70rem) {
+        margin:0 auto;
+    }
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-white;
+}
+.content {
+    display: flex;
+    @media only screen and (max-width:60rem) {
+        flex-direction:column;
+    }
+}
+.side-bar {
+    flex: 0 0 17%;
+}
+.app-view {
+    flex: 1;
+}
+.search {
+    display:flex;
+    background-image:linear-gradient(to right, transparent 0%, transparent 50%, rgba(0,0,0, .8)50%, rgba(0,0,0, .8) 100% ), url("../img/book-cover2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    @media only screen and (max-width:44rem) {
+        flex-direction: column;  
+    } 
+}
+.best-book {
+    flex: 50%;
+    @media only screen and (max-width:44rem) {
+       padding-bottom: 2rem;   
+    } 
+}
+.search-book {
+    flex:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-content {
+    padding: 2rem;
+    display:flex;
+    @media only screen and (max-width:44rem) {
+        flex-direction:column;
+    }  
+}
+.book-reviews {
+    @media only screen and (max-width:44rem) {
+        order:2;
+    }
+   flex: 60%;
+   @media only screen and (max-width:44rem) {
+    padding-right:0;
+   }
+   padding-right: 2rem;
+   border-radius: 5px;
+}
+.right-side {
+    @media only screen and (max-width:44rem) {
+        order:1;
+    }
+    flex:40%;
+    display: flex;
+    flex-direction: column;
+    & > * {
+        margin-bottom: 2rem;
+    } 
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:$color-black-light;
+    padding:.5rem 0;
+}
+

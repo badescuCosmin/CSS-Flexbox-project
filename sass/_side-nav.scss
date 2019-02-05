@@ -1,0 +1,51 @@
+.side-bar {
+    background-color: rgba($color-black-light, .7);
+}
+.nav {
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        @media only screen and (max-width:60rem) {
+            flex-direction:row;
+        }
+        text-transform: uppercase;
+    }
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        fill: $color-white;
+        z-index: 10;
+        position: relative;
+    }
+    &__item {
+        font-size: 1.5rem;
+        padding:2rem;
+        position: relative;
+        @media only screen and (max-width:60rem) {
+            flex:1;
+        }      
+    }
+    &__item::before {
+        content:"";
+        width:3px;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left:0;
+        background-color: rgba($color-blue-2, .7);
+        transition: all .3s ease-in;
+        opacity: 0;      
+    }
+    &__item:hover::before,
+    &__active::before {
+        opacity:1;
+        width: 100%;
+    }
+    &__link {
+        text-decoration: none;
+        color: $color-white;
+        z-index: 10;
+        position: relative;   
+    }
+}
