@@ -1,6 +1,6 @@
 # In this app I designed a landing page using HTML, CSS and CSS Flexbox for positioning and formatting the content.
 
-#TO run the app.
+## TO run the app.
 ### - run in the Comand Line :
 ### : npm install
 ### : npm run compile:sass
